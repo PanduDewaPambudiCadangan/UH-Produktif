@@ -1,0 +1,62 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package kelulusan;
+
+import java.util.Scanner;
+/**
+ *
+ * @author pdewa
+ */
+public class Murid {
+    Scanner input = new Scanner(System.in);
+    String Nama, Nilai, Mapel, NISN, InputNama, InputNISN, InputMapel;
+    int nilai;
+    
+    void nama(){
+       Nama = "Nama : ";
+        System.out.print(Nama);
+    }
+    
+    void Input(){
+        InputNama = input.nextLine();
+    }
+    
+    void nisn(){
+        NISN = "NISN : ";
+        System.out.print(NISN);
+    } 
+    
+    void input(){
+        InputNISN  = input.nextLine();
+    }
+    
+    void mapel(){
+        Mapel = "Mapel : ";
+        System.out.print(Mapel);
+    }
+    
+    void INPUT(){
+        InputMapel = input.nextLine();
+    }
+    
+    void nilai(){
+        Nilai = "Nilai : ";
+        System.out.print(Nilai);
+    }
+    
+    void inpuT(){
+        nilai = input.nextInt();
+    }
+    
+    void Hasil(){
+        if (nilai > 75){
+            System.out.println("Selamat anda telah lulus");
+        }
+        if (nilai < 75){
+        System.out.println("Mohon maaf anda tidak lulus");
+    }
+    }
+}
